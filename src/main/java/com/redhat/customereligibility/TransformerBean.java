@@ -107,6 +107,9 @@ public class TransformerBean {
         Map dataMap = (Map) bianRequest.getData();
         CRCustomerEligibilityAssessmentUpdateInputModelCustomerEligibilityAssessmentInstanceRecord crRecord = new Gson().fromJson(dataMap.get("customerEligibilityAssessmentUpdateActionTaskRecord").toString(), CRCustomerEligibilityAssessmentUpdateInputModelCustomerEligibilityAssessmentInstanceRecord.class);
         //Return Customer Eligibility Assessment
+
+        Map<String,String> inputMap = (Map<String, String>) dataMap.get("customerEligibilityAssessmentInstanceRecord");
+
         CRCustomerEligibilityAssessmentEvaluateOutputModelCustomerEligibilityAssessmentInstanceRecord output = new CRCustomerEligibilityAssessmentEvaluateOutputModelCustomerEligibilityAssessmentInstanceRecord();
         output.setCustomerProductServiceTypeEligibility("Eligible: Customer is in Good Standing");
         CRCustomerEligibilityAssessmentUpdateOutputModel crCustomerEligibilityAssessmentEvaluateOutputModel = new CRCustomerEligibilityAssessmentUpdateOutputModel();
@@ -117,9 +120,13 @@ public class TransformerBean {
         System.out.println("Update Product Usage: " + new Gson().toJson(crCustomerEligibilityAssessmentEvaluateOutputModel));
         bianResponse.setData(crCustomerEligibilityAssessmentEvaluateOutputModel);
 
-        exchange.setProperty("customerReference",crRecord.getCustomerReference());
+        exchange.setProperty("customerReference",inputMap.get("customerReference"));
         exchange.setProperty("exchangeDate",new Date());
-        exchange.setProperty("outputModel",output);
+        exchange.setProperty("productUsage",inputMap.get("productServiceType"));
+        exchange.setProperty("eligibility",output.getCustomerProductServiceTypeEligibility());
+
+
+
         return new Gson().toJson(bianResponse);
     }
     

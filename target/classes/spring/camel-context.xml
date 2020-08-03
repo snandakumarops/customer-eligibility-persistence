@@ -29,12 +29,13 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <!-- this is the JDBC data source which uses an in-memory only Apache Derby database -->
+
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://mysql/mysqldb;create=true"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mysqldb"/>
         <property name="username" value="mysqluser"/>
         <property name="password" value="mysqlpassword"/>
+
     </bean>
 
     <!-- order bean is our business logic bean that creates new orders -->
@@ -74,7 +75,7 @@
         <constructor-arg ref="sessionFactory"/>
         <constructor-arg ref="transactionTemplate"/>
     </bean>
-    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
     <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
@@ -82,7 +83,7 @@
     </bean>
 
     <!-- setup Hibernate session factory -->
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <!-- here we define the hibernate mapping files we use -->
         <property name="mappingResources">
@@ -93,7 +94,7 @@
         <!-- and here we have additional hibernate options -->
         <property name="hibernateProperties">
             <value>
-                hibernate.dialect=org.hibernate.dialect.MySQLDialect
+                hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
                 hibernate.hbm2ddl.auto=create
             </value>
         </property>
