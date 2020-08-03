@@ -462,7 +462,8 @@ public final class CamelRoutes extends RouteBuilder {
 
         from("direct:updateCustomerEligibilityAssessment")
                 .bean(TransformerBean.class,"updateProductUsage")
-                .bean(CRCustomerEligibilityCRBean.class,"generateCRBean")
+                .bean(CRCustomerEligibilityCRBean.class,"getCustomerEligibilityCRModel")
+                .to("direct:hibernateRoute")
                 .to("hibernate:com.redhat.customereligibility.CustomerEligibilityCRModel")
                 .log("${body.id}");
 

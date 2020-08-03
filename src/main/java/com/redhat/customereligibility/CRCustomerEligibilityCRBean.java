@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class CRCustomerEligibilityCRBean {
 
-    public CustomerEligibilityCRModel generateCRBean(Exchange exchange) {
+    public CustomerEligibilityCRModel setCustomerEligibilityCRModel(Exchange exchange) {
 
         String customerReference = (String) exchange.getProperty("customerReference");
         CRCustomerEligibilityAssessmentEvaluateOutputModelCustomerEligibilityAssessmentInstanceRecord outputModel = (CRCustomerEligibilityAssessmentEvaluateOutputModelCustomerEligibilityAssessmentInstanceRecord) exchange.getProperty("outputModel");
@@ -22,5 +22,9 @@ public class CRCustomerEligibilityCRBean {
         customerEligibilityCRModel.setProductServiceType(outputModel.getCustomerProductServiceTypeUsage());
         customerEligibilityCRModel.setEligibilityDate(crDate);
         return customerEligibilityCRModel;
+    }
+
+    public CustomerEligibilityCRModel getCustomerEligibilityCRModel(Exchange exchange) {
+        return null;
     }
 }

@@ -44,12 +44,12 @@
 
         <!--&lt;!&ndash; route that generate new orders and insert them in the database &ndash;&gt;-->
         <!--<route id="generateOrder-route">-->
-            <!--<from uri="timer:foo?period=5s"/>-->
+            <!--<from uri="direct:hibernateRoute"/>-->
             <!--<transform>-->
-                <!--<method ref="orderBean" method="generateOrder"/>-->
+                <!--<method ref="cRCustomerEligibilityCRBean" method="getCustomerEligibilityCRModel"/>-->
             <!--</transform>-->
-            <!--<to uri="hibernate:org.apacheextras.camel.examples.hibernate.Order"/>-->
-            <!--<log message="Inserted new order ${body.id}"/>-->
+            <!--<to uri="hibernate:com.redhat.customereligibility.CustomerEligibilityCRModel"/>-->
+
         <!--</route>-->
 
 
