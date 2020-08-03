@@ -261,7 +261,7 @@
         <repository>
           <id>maven-releases</id>
           <name>maven-releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/</url>
+          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/maven-releases/</url>
         </repository>
 
 
@@ -271,7 +271,7 @@
         <repository>
           <id>maven-releases</id>
           <name>maven-releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/</url>
+          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/maven-releases/</url>
           <layout>default</layout>
         </repository>
 
