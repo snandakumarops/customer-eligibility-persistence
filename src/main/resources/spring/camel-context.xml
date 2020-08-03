@@ -33,8 +33,8 @@
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://mysql-55-rhel7:3306/mysqldb"/>
-        <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="username" value="mysqluser"/>
+        <property name="password" value="mysqlpassword"/>
     </bean>
 
     <!-- order bean is our business logic bean that creates new orders -->
