@@ -1,6 +1,6 @@
 <hibernate-mapping>
 
-    <class name="com.redhat.customereligibility.CustomerEligibilityCRModel" schema="customerproduct" table="product_usage">
+    <class name="com.redhat.customereligibility.CustomerEligibilityCRModel" schema="mysqldb" table="product_usage">
 
         <id name="id">
             <generator class="native"/>

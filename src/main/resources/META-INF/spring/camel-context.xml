@@ -87,13 +87,13 @@
         <!-- here we define the hibernate mapping files we use -->
         <property name="mappingResources">
             <list>
-                <value>Order.hbm.xml</value>
+                <value>CustomerEligibilityCRModel.hbm.xml</value>
             </list>
         </property>
         <!-- and here we have additional hibernate options -->
         <property name="hibernateProperties">
             <value>
-                hibernate.dialect=org.hibernate.dialect.DerbyTenSevenDialect
+                hibernate.dialect=org.hibernate.dialect.MySQLDialect
                 hibernate.hbm2ddl.auto=create
             </value>
         </property>
