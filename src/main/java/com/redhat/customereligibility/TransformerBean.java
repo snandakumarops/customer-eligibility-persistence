@@ -119,7 +119,7 @@ public class TransformerBean {
 
         exchange.setProperty("customerReference",crRecord.getCustomerReference());
         exchange.setProperty("exchangeDate",crCustomerEligibilityAssessmentEvaluateOutputModel.getDate());
-        exchange.setProperty("outputModel",crCustomerEligibilityAssessmentEvaluateOutputModel);
+        exchange.setProperty("outputModel",output);
         return new Gson().toJson(bianResponse);
     }
     
