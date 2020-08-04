@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f5ea779-92b0-462e-bab1-57f7c12923bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/camel-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/camel-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sd-customer-product-service-eligibility.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sd-customer-product-service-eligibility.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="199" column="74" selection-start-line="199" selection-start-column="74" selection-end-line="199" selection-end-column="74" />
+            <state relative-caret-position="101">
+              <caret line="297" column="103" selection-start-line="297" selection-start-column="103" selection-end-line="297" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CustomerEligibilityCRModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="e#310#311#0" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/CustomerEligibilityCRModel.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -66,16 +66,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CamelRoutes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="463" column="42" lean-forward="true" selection-start-line="463" selection-start-column="42" selection-end-line="463" selection-end-column="42" />
+              <caret line="463" column="42" selection-start-line="463" selection-start-column="42" selection-end-line="463" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="camel-context.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="camel-context.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="40" column="74" lean-forward="true" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+            <state relative-caret-position="273">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -111,9 +111,9 @@
       <find>dbcp</find>
       <find>hibernate-c</find>
       <find>hiber</find>
-      <find>driver</find>
       <find>customerProductServiceTypeEligibility</find>
       <find>spring-</find>
+      <find>driver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,12 +140,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/camel-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/CustomerEligibilityCRModel.hbm.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CustomerEligibilityCRModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CamelRoutes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/TransformerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CRCustomerEligibilityCRBean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -383,13 +383,13 @@
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3292517" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
       <window_info anchor="bottom" id="SonarLint" order="0" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -459,31 +459,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="199" column="74" selection-start-line="199" selection-start-column="74" selection-end-line="199" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/CustomerEligibilityCRModel.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CamelRoutes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="463" column="42" lean-forward="true" selection-start-line="463" selection-start-column="42" selection-end-line="463" selection-end-column="42" />
+          <caret line="463" column="42" selection-start-line="463" selection-start-column="42" selection-end-line="463" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CustomerEligibilityCRModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="e#310#311#0" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
@@ -520,8 +513,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="40" column="74" lean-forward="true" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+        <state relative-caret-position="273">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="297" column="103" selection-start-line="297" selection-start-column="103" selection-end-line="297" selection-end-column="103" />
         </state>
       </provider>
     </entry>

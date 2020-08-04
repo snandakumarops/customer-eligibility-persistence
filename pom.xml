@@ -295,7 +295,7 @@
         <repository>
           <id>maven-releases</id>
           <name>maven-releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/maven-releases/</url>
+          <url>http://nexus-nexus.apps.cluster-32eb.32eb.example.opentlc.com/repository/maven-releases/</url>
           <layout>default</layout>
         </repository>
 
