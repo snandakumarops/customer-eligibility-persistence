@@ -32,7 +32,7 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/mysqldb"/>
+        <property name="url" value="jdbc:mysql://mysql-route-mercury.apps.cluster-32eb.32eb.example.opentlc.com/mysqldb"/>
         <property name="username" value="mysqluser"/>
         <property name="password" value="mysqlpassword"/>
 

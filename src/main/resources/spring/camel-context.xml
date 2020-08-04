@@ -32,9 +32,9 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://${env.MYSQL_55_RHEL7_SERVICE_HOST}:${env.MYSQL_55_RHEL7_SERVICE_PORT}"/>
-        <property name="username" value="mysqluser"/>
-        <property name="password" value="mysqlpassword"/>
+        <property name="url" value="jdbc:mysql://${env.MYSQL_SERVICE_HOST}:${env.MYSQL_SERVICE_PORT}/${env.MYSQL_DATABASE}"/>
+        <property name="username" value="${env.MYSQL_USER}"/>
+        <property name="password" value="${env.MYSQL_PASSWORD}"/>
 
     </bean>
 
