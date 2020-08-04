@@ -32,9 +32,9 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://${env.OPENSHIFT_MYSQL_DB_HOST}:${env.OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}"/>
-        <property name="username" value="${env.OPENSHIFT_MYSQL_DB_USERNAME}"/>
-        <property name="password" value="${env.OPENSHIFT_MYSQL_DB_PASSWORD}"/>
+        <property name="url" value="jdbc:mysql://${env.MYSQL_55_RHEL7_SERVICE_HOST}:${env.MYSQL_55_RHEL7_SERVICE_PORT}/mysqldb"/>
+        <property name="username" value="mysqluser"/>
+        <property name="password" value="mysqlpassword"/>
 
     </bean>
 
