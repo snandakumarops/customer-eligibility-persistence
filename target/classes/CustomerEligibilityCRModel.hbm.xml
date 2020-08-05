@@ -1,0 +1,15 @@
+<hibernate-mapping>
+
+    <class name="com.redhat.customereligibility.CustomerEligibilityCRModel" schema="mysqldb" table="product_usage">
+
+        <id name="id" type = "int" column = "id">
+            <generator class="native"/>
+        </id>
+
+        <property name="customerReference" length="20"/>
+        <property name="productServiceType" length="10"/>
+        <property name="customerProductServiceTypeEligibility" length="50"/>
+        <property name="eligibilityDate" />
+    </class>
+
+</hibernate-mapping>

@@ -18,11 +18,14 @@ public class CRCustomerEligibilityCRBean {
 
 
         CustomerEligibilityCRModel customerEligibilityCRModel = new CustomerEligibilityCRModel();
-        customerEligibilityCRModel.setCustomerReference(customerReference);
+        CustomerProductId customerProductId = new CustomerProductId();
+        customerProductId.setCustomerReference(customerReference);
+        customerProductId.setProductServiceType(productType);
+
         customerEligibilityCRModel.setCustomerProductServiceTypeEligibility(eligibility);
-        customerEligibilityCRModel.setProductServiceType(productType);
+        customerEligibilityCRModel.setCustomerProductId(customerProductId);
         customerEligibilityCRModel.setEligibilityDate(crDate);
-        System.out.println(customerEligibilityCRModel.getCustomerProductServiceTypeEligibility()+customerEligibilityCRModel.getCustomerReference());
+        System.out.println(customerEligibilityCRModel.getCustomerProductServiceTypeEligibility()+customerEligibilityCRModel.getCustomerProductId().getCustomerReference());
         return customerEligibilityCRModel;
     }
 

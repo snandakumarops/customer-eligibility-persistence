@@ -1,13 +1,13 @@
 package com.redhat.customereligibility;
 
+import javax.persistence.EmbeddedId;
 import java.util.Date;
 
 public class CustomerEligibilityCRModel {
 
     private int id;
-
-    private String customerReference;
-    private String productServiceType;
+    @EmbeddedId
+    private CustomerProductId customerProductId;
     private Date eligibilityDate;
     private String customerProductServiceTypeEligibility;
 
@@ -20,20 +20,12 @@ public class CustomerEligibilityCRModel {
         this.id = id;
     }
 
-    public String getCustomerReference() {
-        return customerReference;
+    public CustomerProductId getCustomerProductId() {
+        return customerProductId;
     }
 
-    public void setCustomerReference(String customerReference) {
-        this.customerReference = customerReference;
-    }
-
-    public String getProductServiceType() {
-        return productServiceType;
-    }
-
-    public void setProductServiceType(String productServiceType) {
-        this.productServiceType = productServiceType;
+    public void setCustomerProductId(CustomerProductId customerProductId) {
+        this.customerProductId = customerProductId;
     }
 
     public Date getEligibilityDate() {
