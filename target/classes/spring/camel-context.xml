@@ -31,10 +31,10 @@
 
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/mysqldb"/>
-        <property name="username" value="mysqluser"/>
-        <property name="password" value="mysqlpassword"/>
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://{{env.dburl}}"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="postgres"/>
 
     </bean>
 
@@ -43,24 +43,6 @@
 
     <camelContext xmlns="http://camel.apache.org/schema/spring">
 
-        <!--&lt;!&ndash; route that generate new orders and insert them in the database &ndash;&gt;-->
-        <!--<route id="generateOrder-route">-->
-            <!--<from uri="direct:hibernateRoute"/>-->
-            <!--<transform>-->
-                <!--<method ref="cRCustomerEligibilityCRBean" method="getCustomerEligibilityCRModel"/>-->
-            <!--</transform>-->
-            <!--<to uri="hibernate:com.redhat.customereligibility.CustomerEligibilityCRModel"/>-->
-
-        <!--</route>-->
-
-
-        <!--&lt;!&ndash; route that process the orders by picking up new rows from the database-->
-             <!--and when done processing then update the row to mark it as processed &ndash;&gt;-->
-        <!--<route id="processOrder-route">-->
-            <!--<from uri="hibernate:org.apacheextras.camel.examples.hibernate.Order?delay=1s"/>-->
-            <!--<to uri="bean:orderBean?method=processOrder"/>-->
-            <!--<log message="${body}"/>-->
-        <!--</route>-->
 
     </camelContext>
 
@@ -94,7 +76,7 @@
         <!-- and here we have additional hibernate options -->
         <property name="hibernateProperties">
             <value>
-                hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+                hibernate.dialect=org.hibernate.dialect.PostgreSQL92Dialect
                 hibernate.hbm2ddl.auto=create
             </value>
         </property>
