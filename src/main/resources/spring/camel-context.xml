@@ -32,7 +32,7 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://database:5432/example"/>
+        <property name="url" value="jdbc:postgresql://${env.db.url}"/>
         <property name="username" value="postgres"/>
         <property name="password" value="postgres"/>
 
