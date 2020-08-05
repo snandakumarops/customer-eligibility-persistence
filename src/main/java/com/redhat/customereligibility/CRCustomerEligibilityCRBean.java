@@ -14,18 +14,17 @@ public class CRCustomerEligibilityCRBean {
         Date crDate = (Date) exchange.getProperty("exchangeDate");
         String productType = (String) exchange.getProperty("productUsage");
         String eligibility = (String) exchange.getProperty("eligibility");
+        String crNo = (String) exchange.getProperty("crNumber");
 
 
 
         CustomerEligibilityCRModel customerEligibilityCRModel = new CustomerEligibilityCRModel();
-        CustomerProductId customerProductId = new CustomerProductId();
-        customerProductId.setCustomerReference(customerReference);
-        customerProductId.setProductServiceType(productType);
-
+        customerEligibilityCRModel.setCustomerReference(customerReference);
         customerEligibilityCRModel.setCustomerProductServiceTypeEligibility(eligibility);
-        customerEligibilityCRModel.setCustomerProductId(customerProductId);
+        customerEligibilityCRModel.setProductServiceType(productType);
         customerEligibilityCRModel.setEligibilityDate(crDate);
-        System.out.println(customerEligibilityCRModel.getCustomerProductServiceTypeEligibility()+customerEligibilityCRModel.getCustomerProductId().getCustomerReference());
+        customerEligibilityCRModel.setCrNumber(crNo);
+        System.out.println(customerEligibilityCRModel.getCustomerProductServiceTypeEligibility()+customerEligibilityCRModel.getCustomerReference());
         return customerEligibilityCRModel;
     }
 

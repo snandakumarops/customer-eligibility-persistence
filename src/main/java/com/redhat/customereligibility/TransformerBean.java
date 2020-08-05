@@ -124,6 +124,8 @@ public class TransformerBean {
         exchange.setProperty("exchangeDate",new Date());
         exchange.setProperty("productUsage",inputMap.get("productServiceType"));
         exchange.setProperty("eligibility",output.getCustomerProductServiceTypeEligibility());
+        String crNo = exchange.getIn().getHeader("cr-reference-id").toString();
+        exchange.setProperty("crNumber",crNo);
 
         exchange.setProperty("bianResponse",new Gson().toJson(bianResponse));
 
