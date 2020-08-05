@@ -3,6 +3,7 @@ package com.redhat.customereligibility;
 import javax.annotation.Generated;
 
 import io.swagger.models.auth.In;
+import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.servlet.CamelHttpTransportServlet;
 import org.apache.camel.model.rest.RestBindingMode;
@@ -464,7 +465,8 @@ public final class CamelRoutes extends RouteBuilder {
                 .bean(TransformerBean.class,"updateProductUsage")
                 .transform(method(CRCustomerEligibilityCRBean.class,"setCustomerEligibilityCRModel"))
                 .to("hibernate:com.redhat.customereligibility.CustomerEligibilityCRModel")
-                .log("${body.customerReference}");
+                .bean(TransformerBean.class,"returnBianResponse");
+
 
     }
 }

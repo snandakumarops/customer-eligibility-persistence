@@ -125,9 +125,13 @@ public class TransformerBean {
         exchange.setProperty("productUsage",inputMap.get("productServiceType"));
         exchange.setProperty("eligibility",output.getCustomerProductServiceTypeEligibility());
 
-
+        exchange.setProperty("bianResponse",new Gson().toJson(bianResponse));
 
         return new Gson().toJson(bianResponse);
+    }
+
+    public String returnBianResponse(Exchange exchange) {
+        return exchange.getProperty("bianResponse").toString();
     }
     
 
