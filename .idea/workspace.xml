@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f5ea779-92b0-462e-bab1-57f7c12923bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/camel-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/camel-context.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
@@ -72,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="camel-context.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="camel-context.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="188">
+              <caret line="78" column="75" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -112,9 +110,9 @@
       <find>dbcp</find>
       <find>hibernate-c</find>
       <find>hiber</find>
-      <find>spring-</find>
       <find>customerProductServiceTypeEligibility</find>
       <find>driver</find>
+      <find>spring-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CamelRoutes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/TransformerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redhat/customereligibility/CRCustomerEligibilityCRBean.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" />
       </list>
     </option>
   </component>
@@ -157,9 +155,8 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1592" />
-    <option name="y" value="111" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="832" />
   </component>
@@ -369,7 +366,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="111" width="1440" height="832" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="832" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -494,17 +491,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="292" column="30" lean-forward="true" selection-start-line="292" selection-start-column="30" selection-end-line="292" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="78" column="75" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
         </state>
       </provider>
     </entry>
