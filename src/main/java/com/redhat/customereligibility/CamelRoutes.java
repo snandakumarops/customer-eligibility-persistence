@@ -1,6 +1,7 @@
 package com.redhat.customereligibility;
 
 import javax.annotation.Generated;
+import javax.validation.ConstraintViolationException;
 
 import io.swagger.models.auth.In;
 import org.apache.camel.Exchange;
@@ -464,8 +465,13 @@ public final class CamelRoutes extends RouteBuilder {
         from("direct:updateCustomerEligibilityAssessment")
                 .bean(TransformerBean.class,"updateProductUsage")
                 .transform(method(CRCustomerEligibilityCRBean.class,"setCustomerEligibilityCRModel"))
+                .doTry()
                 .to("hibernate:com.redhat.customereligibility.CustomerEligibilityCRModel")
-                .bean(TransformerBean.class,"returnBianResponse");
+                .doCatch(Exception.class)
+                .bean(TransformerBean.class,"returnBianResponseOnException")
+                .doFinally()
+                .bean(TransformerBean.class,"returnBianResponse")
+               ;
 
 
     }

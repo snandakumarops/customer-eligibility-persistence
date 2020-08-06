@@ -1,15 +1,15 @@
 package com.redhat.customereligibility;
 
-import javax.persistence.EmbeddedId;
+import java.io.Serializable;
 import java.util.Date;
 
-public class CustomerEligibilityCRModel {
+public class CustomerEligibilityCRModel implements Serializable {
 
-    private int id;
+
     private String customerReference;
     private String productServiceType;
-    private Date eligibilityDate;
     private String customerProductServiceTypeEligibility;
+    private Date eligibilityDate;
     private String crNumber;
 
     public String getCrNumber() {
@@ -20,13 +20,7 @@ public class CustomerEligibilityCRModel {
         this.crNumber = crNumber;
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getCustomerReference() {
         return customerReference;

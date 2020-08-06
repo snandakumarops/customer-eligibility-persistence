@@ -1,6 +1,7 @@
 package com.redhat.customereligibility;
 
 import com.google.gson.Gson;
+import com.google.gson.internal.LinkedTreeMap;
 import com.redhat.bian.servicedomain.models.*;
 import org.apache.camel.Exchange;
 import org.kie.api.KieServices;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class TransformerBean {
@@ -73,7 +75,7 @@ public class TransformerBean {
     public String evaluateEligibility(Exchange exchange){
 
         String evalString = "";
-        System.out.println(exchange.getIn().getBody());
+
         BianResponse bianResponse = new BianResponse();
         BianRequest bianRequest = new Gson().fromJson(exchange.getIn().getBody().toString(),BianRequest.class);
         Map dataMap = (Map) bianRequest.getData();
@@ -115,7 +117,7 @@ public class TransformerBean {
         CRCustomerEligibilityAssessmentUpdateOutputModel crCustomerEligibilityAssessmentEvaluateOutputModel = new CRCustomerEligibilityAssessmentUpdateOutputModel();
         crCustomerEligibilityAssessmentEvaluateOutputModel.setCustomerEligibilityAssessmentUpdateActionTaskReference("CEAIR780662");
         crCustomerEligibilityAssessmentEvaluateOutputModel.setCustomerEligibilityAssessmentUpdateActionTaskRecord(output);
-        crCustomerEligibilityAssessmentEvaluateOutputModel.setUpdateResponseRecord("Successfully added product " + crRecord.getProductServiceType());
+        crCustomerEligibilityAssessmentEvaluateOutputModel.setUpdateResponseRecord("Successfully added product " + inputMap.get("productServiceType"));
         crCustomerEligibilityAssessmentEvaluateOutputModel.setDate(new Date().toString());
         System.out.println("Update Product Usage: " + new Gson().toJson(crCustomerEligibilityAssessmentEvaluateOutputModel));
         bianResponse.setData(crCustomerEligibilityAssessmentEvaluateOutputModel);
@@ -134,6 +136,15 @@ public class TransformerBean {
 
     public String returnBianResponse(Exchange exchange) {
         return exchange.getProperty("bianResponse").toString();
+    }
+
+    public String returnBianResponseOnException(Exchange exchange) {
+        BianResponse response= new Gson().fromJson(exchange.getProperty("bianResponse").toString(),BianResponse.class);
+        LinkedTreeMap model = (LinkedTreeMap) response.getData();
+        model.put("updateResponseRecord","Product is already added");
+        response.setData(model);
+        exchange.setProperty("bianResponse",new Gson().toJson(response));
+        return new Gson().toJson(response);
     }
     
 

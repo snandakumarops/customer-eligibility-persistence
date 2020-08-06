@@ -2,14 +2,16 @@
 
     <class name="com.redhat.customereligibility.CustomerEligibilityCRModel" schema="mysqldb" table="product_usage">
 
-        <id name="id" type = "int" column = "id">
-            <generator class="native"/>
-        </id>
+        <composite-id>
+            <key-property name="customerReference" length="20"/>
+            <key-property name="productServiceType" length="10"/>
+        </composite-id>
 
-        <property name="customerReference" length="20"/>
-        <property name="productServiceType" length="10"/>
-        <property name="customerProductServiceTypeEligibility" length="50"/>
-        <property name="eligibilityDate" />
+        <property name="customerProductServiceTypeEligibility" length="50" update="true"/>
+        <property name="eligibilityDate" update="true"/>
+        <property name="crNumber" length="50" update="true"/>
+        
+
     </class>
 
 </hibernate-mapping>
