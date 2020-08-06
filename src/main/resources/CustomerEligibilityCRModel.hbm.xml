@@ -9,7 +9,7 @@
 
         <property name="customerProductServiceTypeEligibility" length="50"/>
         <property name="eligibilityDate" />
-        <property name="crNumber" />
+        <property name="crNumber" length="50"/>
 
     </class>
 
