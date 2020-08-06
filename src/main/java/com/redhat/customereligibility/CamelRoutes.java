@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.sql.SQLException;
 
 /**
  * Generated from Swagger specification by Camel REST DSL generator.
@@ -467,11 +468,10 @@ public final class CamelRoutes extends RouteBuilder {
                 .transform(method(CRCustomerEligibilityCRBean.class,"setCustomerEligibilityCRModel"))
                 .doTry()
                 .to("hibernate:com.redhat.customereligibility.CustomerEligibilityCRModel")
-                .doCatch(Exception.class)
+                .doCatch(java.sql.SQLIntegrityConstraintViolationException.class)
                 .bean(TransformerBean.class,"returnBianResponseOnException")
                 .doFinally()
-                .bean(TransformerBean.class,"returnBianResponse")
-               ;
+                .bean(TransformerBean.class,"returnBianResponse");
 
 
     }
