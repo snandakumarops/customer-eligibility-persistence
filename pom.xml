@@ -289,9 +289,9 @@
       <repositories>
 
         <repository>
-          <id>maven-releases</id>
-          <name>maven-releases</name>
-          <url>http://nexus-nexus.apps.cluster-32eb.32eb.example.opentlc.com/repository/maven-releases/</url>
+          <id>releases</id>
+          <name>releases</name>
+          <url>${env.NEXUSREPO}</url>
         </repository>
 
 
@@ -299,9 +299,9 @@
       <distributionManagement>
 
         <repository>
-          <id>maven-releases</id>
-          <name>maven-releases</name>
-          <url>http://nexus-nexus.apps.cluster-32eb.32eb.example.opentlc.com/repository/maven-releases/</url>
+          <id>releases</id>
+          <name>releases</name>
+          <url>${env.NEXUSREPO}</url>
           <layout>default</layout>
         </repository>
 
