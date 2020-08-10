@@ -11,7 +11,6 @@ public class RuleSessionFactory {
     protected static DMNRuntime createDMNRuntime() {
         KieServices kieServices = KieServices.Factory.get();
 
-//        ReleaseId releaseId = kieServices.newReleaseId( "com.myspace", "RiskRatingDMN", "1.0.0-SNAPSHOT" );
         KieContainer kieContainer = kieServices.newKieClasspathContainer(  );
         DMNRuntime dmnRuntime = KieRuntimeFactory.of(kieContainer.getKieBase()).get(DMNRuntime.class);
 

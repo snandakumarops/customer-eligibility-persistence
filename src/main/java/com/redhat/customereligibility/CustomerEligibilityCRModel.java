@@ -2,7 +2,9 @@ package com.redhat.customereligibility;
 
 import java.io.Serializable;
 import java.util.Date;
-
+/*
+    Customer Eligibility Hibernate Model
+ */
 public class CustomerEligibilityCRModel implements Serializable {
 
 
