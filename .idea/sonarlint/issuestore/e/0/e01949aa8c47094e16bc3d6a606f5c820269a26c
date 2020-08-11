@@ -1,0 +1,49 @@
+
+J
+java:S3740O"/Provide the parametrized type for this generic.(ã¾Ü¯ıÿÿÿÿ
+J
+java:S3740O"/Provide the parametrized type for this generic.(ã¾Ü¯ıÿÿÿÿ
+J
+java:S3740P"/Provide the parametrized type for this generic.(§ŠŠ÷ùÿÿÿÿ
+E
+java:S3740Q"/Provide the parametrized type for this generic.(¶Ğ™ñ
+J
+java:S3740k"/Provide the parametrized type for this generic.(ã¾Ü¯ıÿÿÿÿ
+J
+java:S3740k"/Provide the parametrized type for this generic.(ã¾Ü¯ıÿÿÿÿ
+J
+java:S3740l"/Provide the parametrized type for this generic.(§ŠŠ÷ùÿÿÿÿ
+E
+java:S3740m"/Provide the parametrized type for this generic.(¶Ğ™ñ
+E
+java:S3740"/Provide the parametrized type for this generic.(€ÀĞ'
+K
+java:S3740"/Provide the parametrized type for this generic.(ÌÖëşüÿÿÿÿ
+d
+java:S1192„"MDefine a constant instead of duplicating this literal "bianResponse" 4 times.(ĞÇÁü
+>
+java:S1148F"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+
+java:S1488:"dImmediately return this expression instead of assigning it to the temporary variable "resultString".(§­å¨ûÿÿÿÿ
+O
+java:S1128"4Remove this unused import 'java.util.LinkedHashMap'.(ò†ŠŞùÿÿÿÿ
+Y
+java:S1128"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú
+n
+java:S1128
+"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ
+v
+java:S1450"[Remove the "kieContainer" field and declare it as a local variable in the relevant methods.(Ş­£ıÿÿÿÿ
+H
+java:S1172"-Remove this unused method parameter "custId".(¿áƒÁşÿÿÿÿ
+Y
+java:S1854">Remove this useless assignment to local variable "resultJson".(åÜî¢ıÿÿÿÿ
+R
+java:S1854n"<Remove this useless assignment to local variable "crRecord".(¥ĞËÁ
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(«çÆéüÿÿÿÿ
+J
+java:S1481"/Remove this unused "resultJson" local variable.(åÜî¢ıÿÿÿÿ
+C
+java:S1481n"-Remove this unused "crRecord" local variable.(¥ĞËÁ
+K
+java:S1068"0Remove this unused "kieContainer" private field.(Ş­£ıÿÿÿÿ
