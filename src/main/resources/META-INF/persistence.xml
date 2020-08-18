@@ -7,7 +7,7 @@
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://mysql:3306/mysqldb" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://${MYSQL_SERVICE_HOST}:3306/mysqldb" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="mysqluser" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="mysqlpassword" /> <!-- DB Password -->
 
