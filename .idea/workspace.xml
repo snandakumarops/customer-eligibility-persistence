@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f5ea779-92b0-462e-bab1-57f7c12923bb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/camel-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/camel-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/camel-context.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +75,8 @@
       <file leaf-file-name="camel-context.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="159">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -416,9 +414,9 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.39183673" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.39183673" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3292517" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3292517" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26037195" />
@@ -800,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/camel-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="159">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
         </state>
       </provider>
     </entry>
