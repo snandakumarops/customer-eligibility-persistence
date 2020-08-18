@@ -31,23 +31,22 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <!--<property name="url" value="jdbc:mysql://${env.MYSQL_SERVICE_HOST}:3306/mysqldb?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true"/>-->
-        <property name="url" value="jdbc:mysql://${MYSQL_SERVICE_HOST}:3306/mysqldb"/>
+        <property name="url" value="jdbc:mysql://${env.MYSQL_SERVICE_HOST}:3306/mysqldb?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true"/>
+        <!--<property name="url" value="jdbc:mysql://mysql-1:3306/mysqldb"/>-->
         <property name="username" value="mysqluser"/>
         <property name="password" value="mysqlpassword"/>
     </bean>
 
-    <!--<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">-->
-        <!--<property name="persistenceUnitName" value="persistenceUnit"/>-->
-    <!--</bean>-->
 
     <!-- order bean is our business logic bean that creates new orders -->
     <bean id="crCustomerEligibilityCRBean" class="com.redhat.customereligibility.CRCustomerEligibilityCRBean"/>
 
     <camelContext xmlns="http://camel.apache.org/schema/spring">
-
+        <routeBuilder ref="myroute"/>
 
     </camelContext>
+
+    <bean id="myroute" class="com.redhat.customereligibility.CamelRoutes"/>
 
     <!-- setup the Camel hibernate component -->
     <bean id="hibernate" class="org.apacheextras.camel.component.hibernate.HibernateComponent">
