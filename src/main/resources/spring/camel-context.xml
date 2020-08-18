@@ -29,14 +29,17 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">-->
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+        <!--<property name="url" value="jdbc:mysql://${env:MYSQL_SERVICE_HOST}:3306/mysqldb"/>-->
+        <!--&lt;!&ndash;<property name="url" value="jdbc:mysql://mysql-1:3306/mysqldb"/>&ndash;&gt;-->
+        <!--<property name="username" value="mysqluser"/>-->
+        <!--<property name="password" value="mysqlpassword"/>-->
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://${env:MYSQL_SERVICE_HOST}:3306/mysqldb"/>
-        <!--<property name="url" value="jdbc:mysql://mysql-1:3306/mysqldb"/>-->
-        <property name="username" value="mysqluser"/>
-        <property name="password" value="mysqlpassword"/>
+    <!--</bean>-->
 
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="persistenceUnit"/>
     </bean>
 
     <!-- order bean is our business logic bean that creates new orders -->
