@@ -23,8 +23,7 @@ import java.sql.SQLException;
 /**
  * Generated from Swagger specification by Camel REST DSL generator.
  */
-@ComponentScan
-@Component
+
 @Generated("org.apache.camel.generator.swagger.PathGenerator")
 public final class CamelRoutes extends RouteBuilder {
 
