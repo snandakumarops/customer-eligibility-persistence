@@ -41,13 +41,6 @@
     <!-- order bean is our business logic bean that creates new orders -->
     <bean id="crCustomerEligibilityCRBean" class="com.redhat.customereligibility.CRCustomerEligibilityCRBean"/>
 
-    <camelContext xmlns="http://camel.apache.org/schema/spring">
-        <routeBuilder ref="myroute"/>
-
-    </camelContext>
-
-    <bean id="myroute" class="com.redhat.customereligibility.CamelRoutes"/>
-
     <!-- setup the Camel hibernate component -->
     <bean id="hibernate" class="org.apacheextras.camel.component.hibernate.HibernateComponent">
         <property name="sessionFactory" ref="sessionFactory"/>
