@@ -76,6 +76,10 @@
     </dependency>
 
 
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+
+
+
 
 
     <!-- Enabling health checks -->
@@ -291,7 +295,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>${env.NEXUSREPO}</url>
+          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/releases/</url>
         </repository>
 
 
@@ -301,7 +305,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>${env.NEXUSREPO}</url>
+          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/releases/</url>
           <layout>default</layout>
         </repository>
 
