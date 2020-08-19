@@ -44,15 +44,6 @@
     <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7.2-redhat-00003" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-stream:2.21.0.fuse-740039-redhat-00001" level="project" />
     <orderEntry type="library" name="Maven: com.myspace:ProductEligibilityDMN:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:kie-pmml:7.26.0.Final-redhat-00006" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:4.12.0.redhat-003" level="project" />
-    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3-redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: org.mvel:mvel2:2.4.4.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:1.0.1.Final-redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: javax.activation:activation:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.10.redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
-    <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c-redhat-2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.5.17.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:1.5.17.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.20.RELEASE" level="project" />
@@ -88,6 +79,9 @@
     <orderEntry type="library" name="Maven: org.kie:kie-dmn-core:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-dmn-model:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-dmn-backend:7.26.0.Final-redhat-00006" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.10.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
+    <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c-redhat-2" level="project" />
     <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-commons:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-dmn-feel:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: ch.obermuhlner:big-math:2.0.1" level="project" />
@@ -95,6 +89,7 @@
     <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-maven-support:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-internal:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-core:7.26.0.Final-redhat-00006" level="project" />
+    <orderEntry type="library" name="Maven: org.mvel:mvel2:2.4.4.Final" level="project" />
     <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-project-datamodel-commons:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-project-datamodel-api:7.26.0.Final-redhat-00006" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-compiler:7.26.0.Final-redhat-00006" level="project" />
