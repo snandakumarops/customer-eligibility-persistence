@@ -1,11 +1,13 @@
 package com.redhat.customereligibility;
 
 import org.apache.camel.Exchange;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 /*
     Persist Customer Eligibility
  */
+@Component
 public class CRCustomerEligibilityCRBean {
 
     public CustomerEligibilityCRModel setCustomerEligibilityCRModel(Exchange exchange) {

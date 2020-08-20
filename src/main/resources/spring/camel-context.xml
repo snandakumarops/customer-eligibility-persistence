@@ -29,7 +29,7 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+    <bean id="mydatasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/mysqldb"/>
         <!--<property name="url" value="jdbc:mysql://mysql-1:3306/mysqldb"/>-->
@@ -62,7 +62,7 @@
     <!-- setup Hibernate session factory -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 <!--        <property name="persistenceUnitName" value="persistenceUnit"/>-->
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="mydatasource"/>
         <!-- here we define the hibernate mapping files we use -->
         <property name="mappingResources">
             <list>
