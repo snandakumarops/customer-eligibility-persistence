@@ -229,13 +229,25 @@
 
   <build>
     <plugins>
+<!--      <plugin>-->
+<!--        &lt;!&ndash; Build an executable JAR &ndash;&gt;-->
+
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--      </plugin>-->
       <plugin>
-        <!-- Build an executable JAR -->
-
-        <groupId>org.springframework.boot</groupId>
+        <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
+        <version>7.4.0.fuse-740036-redhat-00002</version>
 
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 
       <plugin>
         <groupId>org.apache.camel</groupId>
