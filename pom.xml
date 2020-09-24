@@ -305,7 +305,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/releases/</url>
+          <url>http://nexus-nexus-system.apps.cluster-90e5.green.osp.opentlc.com/repository/releases/</url>
           <layout>default</layout>
         </repository>
 
