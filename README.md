@@ -1,4 +1,4 @@
-## Customer Eligibility Domain
+## Customer Eligibility Domain  
 ```
 oc new-app java:8~https://github.com/rh-mercury/mercury-sd-camel --context-dir sd-customer-eligibility --name=sd-customer-eligibility 
 --build-env=NEXUSREPO="<nexus-repo-url>" --build-env=AB_JOLOKIA_OFF=true
