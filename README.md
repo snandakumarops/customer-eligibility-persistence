@@ -1,25 +1,6 @@
 
-## Customer Eligibility
-
-To provide for persistence for the service domain, we need to set a MySQL instance. The Update Customer Eligibility call persists the product usage information for the customer in a DB.
-
-
-To setup Mysql
-
 ```
-oc new-app -e MYSQL_USER=mysqluser -e MYSQL_PASSWORD=mysqlpassword -e MYSQL_DATABASE=mysqldb -eMYSQL_ALLOW_EMPTY_PASSWORD=true mysql:5.6 
-```
-
-The Mysql pod needs to have a proper timezone set, for this open up the terminal of Mysql and invoke the command as below. (Alternatively, we could do a oc rsh <mysql_pod>)
-
-```
-mysql -u root -h mysql mysqldb
-SET GLOBAL time_zone = '+1:00'
-```
-Now lets deploy the servioc ece domain microservice.
-
-```
-oc new-app java:8~httpexis://github.com/rh-mercury/mercury-sd-camel --context-dir sd-customer-eligibility --name=sd-customer-eligibility 
+oc new-app java:8~https://github.com/rh-mercury/mercury-sd-camel --context-dir sd-customer-eligibility --name=sd-customer-eligibility 
 --build-env=NEXUSREPO="<nexus-repo-url>" --build-env=AB_JOLOKIA_OFF=true
 -eoc.project.path=<path to service>
 
@@ -72,4 +53,3 @@ PUT http://localhost:8081/customer-product-service-eligibility/SD22323/customer-
   }
 }
 ```
-

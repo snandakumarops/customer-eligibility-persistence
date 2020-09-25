@@ -8,7 +8,7 @@
 
   <groupId>com.redhat</groupId>
   <artifactId>sd-customer-product-service-eligibility</artifactId>
-  <version>1.4.0</version>
+  <version>1.5.0</version>
 
 
     <properties>
@@ -295,7 +295,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/releases/</url>
+          <url>${NEXUSREPO}</url>
         </repository>
 
 
@@ -305,7 +305,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-2d0b.green.osp.opentlc.com/repository/releases/</url>
+          <url>${NEXUSREPO}</url>
           <layout>default</layout>
         </repository>
 
