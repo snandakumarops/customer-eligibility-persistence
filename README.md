@@ -12,6 +12,7 @@ oc new-app java:8~https://github.com/rh-mercury/mercury-sd-camel --context-dir s
 oc expose svc/sd-customer-eligibility
 ```
 
+
 Swagger can be found at: ```{URL}/swagger-ui```
 
 For setting up Fuse console, create a Service which will expose the management port for the service domain.
