@@ -54,6 +54,7 @@ public final class CamelRoutes extends RouteBuilder {
                 .apiProperty("api.version", "1.0")
         ;
 
+
         rest()
                 .post("/customer-product-service-eligibility/activation")
                 .id("activateSDCustomerProductServiceEligibility")
