@@ -50,7 +50,7 @@ public final class CamelRoutes extends RouteBuilder {
                 .contextPath("/service")
 
                 .host(projectPath)
-                .apiProperty("api.title", "Example REST api")
+                .apiProperty("api.title", "Customer Eligibility API")
                 .apiProperty("api.version", "1.0")
         ;
 
