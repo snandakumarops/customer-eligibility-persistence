@@ -29,6 +29,7 @@ public final class CamelRoutes extends RouteBuilder {
 
     @Value("${oc.project.path}")
     String projectPath;
+
     @Bean
     public ServletRegistrationBean servletRegistrationBean() {
         ServletRegistrationBean registration = new ServletRegistrationBean(new CamelHttpTransportServlet(), "/service/*");
@@ -49,9 +50,12 @@ public final class CamelRoutes extends RouteBuilder {
                 .contextPath("/service")
 
                 .host(projectPath)
-                .apiProperty("api.title", "Example REST api")
+                .apiProperty("api.title", "Customer Eligibility API")
                 .apiProperty("api.version", "1.0")
         ;
+
+
+
 
         rest()
                 .post("/customer-product-service-eligibility/activation")

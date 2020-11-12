@@ -4,18 +4,15 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-
-
   <groupId>com.redhat</groupId>
   <artifactId>sd-customer-product-service-eligibility</artifactId>
   <version>1.5.0</version>
 
-
-    <properties>
-      <maven.compiler.source>1.8</maven.compiler.source>
-      <maven.compiler.target>1.8</maven.compiler.target>
-        <bom.version>7.4.0.fuse-740036-redhat-00002</bom.version>
-    </properties>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <bom.version>7.4.0.fuse-740036-redhat-00002</bom.version>
+  </properties>
 
   <dependencyManagement>
     <dependencies>
@@ -295,7 +292,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-90e5.green.osp.opentlc.com/repository/releases/</url>
+          <url>${NEXUSREPO}</url>
         </repository>
 
 
@@ -305,7 +302,7 @@
         <repository>
           <id>releases</id>
           <name>releases</name>
-          <url>http://nexus-nexus-system.apps.cluster-90e5.green.osp.opentlc.com/repository/releases/</url>
+          <url>${NEXUSREPO}</url>
           <layout>default</layout>
         </repository>
 
