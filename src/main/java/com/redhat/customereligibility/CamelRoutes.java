@@ -479,5 +479,7 @@ public final class CamelRoutes extends RouteBuilder {
                 .bean(TransformerBean.class,"returnBianResponse");
 
 
+
+
     }
 }
