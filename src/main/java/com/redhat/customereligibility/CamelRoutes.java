@@ -462,6 +462,7 @@ public final class CamelRoutes extends RouteBuilder {
         from("direct:evaluateCustomerEligibilityAssessment")
                 .bean(TransformerBean.class,"evaluateEligibility");
 
+
         from("direct:updateCustomerEligibilityAssessment")
                 .bean(TransformerBean.class,"updateProductUsage")
                 .transform(method(CRCustomerEligibilityCRBean.class,"setCustomerEligibilityCRModel"))
